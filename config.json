@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "auth": {
     "enabled": false
+  },
+  "dashboard": {
+    "theme": "dark",
+    "refreshIntervalSeconds": 60
   }
 }
