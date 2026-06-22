@@ -1,1 +1,5 @@
-"Добавяме страница за графики" 
+function renderChart(data) {
+  return { type: "bar", points: data };
+}
+
+module.exports = { renderChart };

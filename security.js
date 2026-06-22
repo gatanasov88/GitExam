@@ -1,3 +1,6 @@
-"Добавяне на критичен бъг в сигурността" 
+function isSafeRedirect(url) {
+  // Fix: only allow relative, same-origin redirects
+  return typeof url === "string" && url.startsWith("/") && !url.startsWith("//");
+}
 
-Оправяме някакъв бъг свързан със сигурността тук
+module.exports = { isSafeRedirect };
