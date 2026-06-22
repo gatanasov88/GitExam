@@ -1,5 +1,7 @@
-"# ����� �� GIT � ���⓭�"
-""
-test
+# Git Изпит
 
-## CI/CD\n\nThis repo uses GitHub Actions for CI.
+Repository for the Git regular exam: branching/hotfix workflow, hooks/CI automation, and history recovery.
+
+## CI/CD
+
+This repo uses GitHub Actions for CI.
