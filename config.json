@@ -1,0 +1,7 @@
+{
+  "appName": "GitExam",
+  "version": "1.0.0",
+  "auth": {
+    "enabled": false
+  }
+}
