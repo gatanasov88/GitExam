@@ -1,0 +1,12 @@
+{
+  "name": "gitexam",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node test/run.js",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
