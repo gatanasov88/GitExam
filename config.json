@@ -5,5 +5,9 @@
     "enabled": true,
     "provider": "local",
     "sessionTimeoutMinutes": 30
+  },
+  "dashboard": {
+    "theme": "dark",
+    "refreshIntervalSeconds": 60
   }
 }
