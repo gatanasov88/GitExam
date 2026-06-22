@@ -1,0 +1,8 @@
+#!/bin/sh
+# Runs unit tests before allowing a push. Blocks the push if tests fail.
+npm test || {
+  echo "ERROR: Tests failed. Push aborted."
+  exit 1
+}
+
+exit 0

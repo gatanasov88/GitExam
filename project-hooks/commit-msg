@@ -1,0 +1,13 @@
+#!/bin/sh
+# Validates commit message format: "TASK-123: Fix issue"
+commit_msg_file="$1"
+commit_msg=$(head -n1 "$commit_msg_file")
+pattern="^TASK-[0-9]+: .+"
+
+if ! echo "$commit_msg" | grep -Eq "$pattern"; then
+  echo "ERROR: Commit message does not match required format 'TASK-123: Description'."
+  echo "Got: $commit_msg"
+  exit 1
+fi
+
+exit 0

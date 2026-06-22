@@ -1,0 +1,10 @@
+#!/bin/sh
+# Checks code formatting before allowing a commit.
+if [ -f package.json ] && [ -d node_modules ]; then
+  npx --no-install prettier --check . || {
+    echo "ERROR: Code formatting check failed. Run 'npx prettier --write .' and try again."
+    exit 1
+  }
+fi
+
+exit 0
