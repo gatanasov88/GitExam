@@ -17,7 +17,7 @@ function run(name, fn) {
 }
 
 run("login accepts admin credentials", () => {
-  assert.strictEqual(login("admin", "admin"), false);
+  assert.strictEqual(login("admin", "admin"), true);
 });
 
 run("login rejects wrong credentials", () => {
